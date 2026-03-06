@@ -67,16 +67,32 @@ export default function Home() {
       </section>
 
       {/* 4. PREVIEW MENU (Background Scuro Originale) */}
+{/* 4. PREVIEW MENU (Aggiornato con 10 piatti totali e pulsante) */}
       <section className="py-16 bg-[#1A1A1A] text-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-serif text-center mb-12 text-[#D4AF37]">I Nostri Piatti</h2>
+          
           <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl mx-auto">
+            {/* Piatti esistenti */}
             <MenuItem name="Gnocco Fritto con Affettati Misti" price="14,00€" />
             <MenuItem name="Tortelli Verdi Vecchia Modena" price="12,00€" />
             <MenuItem name="Carbonara Romana" price="12,00€" />
             <MenuItem name="Filetto di Fassona Piemontese" price="29,00€" />
             <MenuItem name="Antipasto di Mare Tulipano" price="24,00€" />
             <MenuItem name="Spaghettone allo Scoglio" price="19,00€" />
+            
+            {/* Nuove righe basate sulle specialità del locale */}
+            <MenuItem name="Risotto ai Frutti di Mare" price="18,00€" />
+            <MenuItem name="Fritto Misto di Pesce" price="18,00€" />
+            <MenuItem name="Pizza del Mese" price="9,50€" />
+            <MenuItem name="Le nostre birre selezionate" price="6,00€" />
+          </div>
+
+          {/* Pulsante per il Menù Intero */}
+          <div className="text-center mt-16">
+            <button className="border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black px-10 py-3 rounded-sm font-bold transition-all duration-300 uppercase tracking-[0.2em] text-sm">
+              Guarda tutto il menù
+            </button>
           </div>
         </div>
       </section>
