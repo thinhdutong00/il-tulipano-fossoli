@@ -5,10 +5,13 @@ import Image from 'next/image';
 export default function Home() {
   // Lista delle tue foto reali caricate su VS Code
   const slides = [
-    "/hero1 - tulipano carpi.webp",
-    "/lampade soffitto - tulipano.webp",
-    "/scaffale dei vini - tulipano.webp",
-    "/tavola con tovaglia - tulipano.webp"
+    "/hero1-tulipano-carpi.webp",
+    "/pizza-margherita-con-basilico-tulipano.webp",
+    "/filetto-di-carne-alla-griglia-tulipano.webp",
+    "/scaffale-dei-vini-tulipano.webp",
+    "/tavola-con-tovaglia-tulipano.webp",
+    "/lampade-soffitto-tulipano.webp"
+   
   ];
 
   const [currentSlide, setCurrentSlide] = useState(0);
