@@ -13,12 +13,26 @@ export default function MenuPage() {
   // Array temporaneo con le immagini che hai già nella cartella public
   // Quando avrai le immagini del menu, sostituisci questi nomi
   const tempImages = [
-    "/scaffale-dei-vini-tulipano.webp",
-    "/tulipanofossoli-card3.webp",
-    "/filetto-di-carne-alla-griglia-tulipano.webp",
-    "/tulipanocarpi-interno-1.webp",
-    "/piatto-di-pasta-gambero.webp",
-    "/pizza-acciughe.webp"
+    "/1.png",
+    "/2.png",
+    "/3.png",
+    "/4.png",
+    "/5.png",
+    "/6.png",
+    "/7.png",
+    "/8.png",
+    "/9.png",
+    "/10.png",
+    "/11.png",
+    "/12.png",
+    "/13.png",
+    "/14.png",
+    "/15.png",
+    "/16.png",
+    "/17.png",
+    "/18.png",
+    "/19.png",
+    "/20.png"
   ];
 
   return (
@@ -90,17 +104,7 @@ export default function MenuPage() {
               }
             }
           `}</style>
-        </div>
-
-        {/* Pulsante Download */}
-        <div className="text-center mt-12">
-          <Link 
-            href="/nuovo-menù-tulipano-carpi-(14).pdf" 
-            target="_blank"
-            className="inline-flex items-center gap-2 bg-[#800020] text-white px-8 py-3 rounded-sm font-bold uppercase tracking-widest text-sm hover:bg-black transition-colors"
-          >
-            Scarica Menù PDF
-          </Link>
+      
         </div>
 
       </div>
