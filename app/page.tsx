@@ -256,48 +256,50 @@ export default function Home() {
 </section>
 
 
-      {/* 6. FOOTER (Colori Sito Originale) */}
-      <footer className="bg-[#111111] py-16 text-gray-400 border-t border-[#800020]/30">
-        <div className="container mx-auto px-4 grid md:grid-cols-3 gap-12 text-sm">
-          <div>
-            <h4 className="font-bold text-[#D4AF37] mb-4 uppercase tracking-widest">Dove Siamo</h4>
-            <p className="text-white font-medium">Via A. Moro Interna, 1R</p>
-            <p>41012 Carpi (MO)</p>
-            <p className="mt-4 text-[#800020] font-bold cursor-pointer hover:text-white transition">VAI ALLE INDICAZIONI</p>
+{/* 6. FOOTER GLASS STYLE */}
+      <footer className="relative z-10 bg-[#111111]/80 backdrop-blur-xl py-20 text-gray-300 border-t border-white/10 mt-20">
+        <div className="container mx-auto px-4 grid md:grid-cols-3 gap-16 relative z-10">
+          
+          <div className="flex flex-col space-y-4">
+            <h4 className="text-[#E5B54F] font-serif text-xl tracking-widest uppercase">Dove Siamo</h4>
+            <p className="text-white text-lg font-medium">Via A. Moro Interna, 1R <br/> 41012 Carpi (MO)</p>
+            <p className="text-[#800020] font-bold text-xs tracking-widest cursor-pointer hover:text-white transition">VAI ALLE INDICAZIONI →</p>
           </div>
-          <div>
-            <h4 className="font-bold text-[#D4AF37] mb-4 uppercase tracking-widest">Orari</h4>
-            <p>Aperto tutti i giorni:</p>
-            <p className="text-white">Pranzo: 12:00/15:00</p>
-            <p className="text-white">Cena: 18:00/00:00</p>
+
+          <div className="flex flex-col space-y-4">
+            <h4 className="text-[#E5B54F] font-serif text-xl tracking-widest uppercase">Orari</h4>
+            <div className="space-y-2">
+              <p className="flex justify-between border-b border-white/5 pb-1"><span>Pranzo:</span> <span className="text-white">12:00 / 15:00</span></p>
+              <p className="flex justify-between border-b border-white/5 pb-1"><span>Cena:</span> <span className="text-white">18:00 / 00:00</span></p>
+            </div>
           </div>
-          <div>
-            <h4 className="font-bold text-[#D4AF37] mb-4 uppercase tracking-widest">Contatti</h4>
-            <p>Enjoy SRL - P. IVA 03831040369</p>
-            <div className="flex gap-4 mt-4">
-               <span className="bg-[#800020] p-2 text-white rounded-full cursor-pointer hover:bg-white hover:text-black transition">FB</span>
-               <span className="bg-[#800020] p-2 text-white rounded-full cursor-pointer hover:bg-white hover:text-black transition">IG</span>
+
+          <div className="flex flex-col space-y-4">
+            <h4 className="text-[#E5B54F] font-serif text-xl tracking-widest uppercase">Contatti</h4>
+            <p className="text-sm">Enjoy SRL - P. IVA 03831040369</p>
+            <div className="flex gap-4">
+               <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-[#800020] transition-all cursor-pointer">FB</div>
+               <div className="w-10 h-10 rounded-full bg-white/10 border border-white/20 flex items-center justify-center hover:bg-[#800020] transition-all cursor-pointer">IG</div>
             </div>
           </div>
         </div>
-        <div className="text-center mt-12 text-[10px] uppercase tracking-[0.2em]">
-          © {new Date().getFullYear()} Il Tulipano - Developed with Next.js & Vercel
+
+        <div className="text-center mt-20 text-[10px] uppercase tracking-[0.4em] text-gray-600">
+          © {new Date().getFullYear()} Il Tulipano — Excellence in Carpi
         </div>
       </footer>
-
     </main>
   );
 }
 
-// Componente MenuItem con tipi corretti per TypeScript
+// DEFINIZIONE DI MENUITEM (Mettila proprio alla fine di tutto, fuori da Home)
 function MenuItem({ name, price }: { name: string, price: string }) {
   return (
-    // Ho cambiato 'border-gray-800' con 'border-[#D4AF37]/30' (oro semitrasparente)
-    <div className="flex justify-between items-baseline border-b border-[#D4AF37]/30 pb-2 group hover:border-[#D4AF37] transition-colors duration-300">
-      <span className="text-md font-light uppercase tracking-widest group-hover:text-[#D4AF37] transition-colors">
+    <div className="flex justify-between items-baseline border-b border-[#E5B54F]/20 pb-2 group hover:border-[#E5B54F] transition-colors duration-300">
+      <span className="text-md font-light uppercase tracking-[0.15em] group-hover:text-[#E5B54F] transition-colors">
         {name}
       </span>
-      <span className="text-[#D4AF37] font-bold ml-4">{price}</span>
+      <span className="text-[#E5B54F] font-bold ml-4">{price}</span>
     </div>
   );
 }
