@@ -191,49 +191,33 @@ export default function InformazioniPage() {
               </div>
             </div>
 
-            {/* Locale 2: Fossoli */}
+{/* Locale 2: Fossoli */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6 md:order-1">
                 <h3 className="text-4xl font-bold text-[#333333]">Il Tulipano - Fossoli</h3>
                 <div className="space-y-3 text-gray-600">
-                  <p className="flex items-center gap-3">
-                    <span className="text-[#800020]">📍</span> Via Mare Adriatico 30 - 41012 Carpi (MO) - 
-                    <Link href="#" className="underline ml-1">Vai alle indicazioni stradali</Link>
-                  </p>
-                  <p className="flex items-center gap-3">
-                    <span className="text-[#800020]">📞</span> Numero di telefono - 059 867 8400
-                  </p>
-                  <p className="flex items-center gap-3">
-                    <span className="text-[#800020]">📶</span> Accesso libero al Wifi
-                  </p>
+                  <p>📍 Via Mare Adriatico 30 - 41012 Carpi (MO)</p>
+                  <p>📞 059 867 8400</p>
+                  <p>📶 Accesso libero al Wifi</p>
                 </div>
-                <div className="flex items-center gap-4 pt-4">
-                  <div className="flex gap-2">
-                    <div className="w-10 h-10 bg-[#3b5998] rounded flex items-center justify-center text-white">FB</div>
-                    <div className="w-10 h-10 bg-[#e4405f] rounded flex items-center justify-center text-white">IG</div>
-                  </div>
-                  <Link href="https://iltulipanofossoli.it" target="_blank">
-                    <button className="bg-[#800020] hover:bg-[#600018] text-white px-8 py-3 rounded font-medium flex items-center gap-2 transition-colors">
-                      Vai al Sito Web <span className="text-lg">›</span>
-                    </button>
-                  </Link>
-                </div>
+                <Link href="https://iltulipanofossoli.it" target="_blank">
+                  <button className="bg-[#800020] text-white px-8 py-3 rounded font-medium">
+                    Vai al Sito Web ›
+                  </button>
+                </Link>
               </div>
-              {/* Collage di immagini per Fossoli */}
-              <div className="relative h-[350px] md:order-2 grid grid-cols-2 gap-2">
-                <div className="relative h-full">
-                   <Image src="/pizza-acciughe.webp" alt="Pizza Fossoli" fill className="object-cover rounded-sm" />
-                </div>
-                <div className="grid grid-rows-2 gap-2">
-                   <div className="relative"><Image src="/piatto-di-pasta-gambero.webp" alt="Pasta Fossoli" fill className="object-cover rounded-sm" /></div>
-                   <div className="relative"><Image src="/filetto-rucola.webp" alt="Carne Fossoli" fill className="object-cover rounded-sm" /></div>
-                </div>
+              <div className="relative h-[350px] md:order-2">
+                <Image 
+                  src="/tulipanofossoli-card3.webp" 
+                  alt="Il Tulipano Fossoli" 
+                  fill 
+                  className="object-cover rounded-sm shadow-lg" 
+                />
               </div>
-            </div>
-
+</div>
           </div>
         </div>
-</section>
+      </section>
     </main>
   );
 }
