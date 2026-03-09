@@ -201,17 +201,19 @@ export default function InformazioniPage() {
                   <p>📶 Accesso libero al Wifi</p>
                 </div>
                 <Link href="https://iltulipanofossoli.it" target="_blank">
-                  <button className="bg-[#800020] text-white px-8 py-3 rounded font-medium">
+                  <button className="bg-[#800020] text-white px-8 py-3 rounded font-medium transition-all hover:bg-[#600018]">
                     Vai al Sito Web ›
                   </button>
                 </Link>
               </div>
-              <div className="relative h-[350px] md:order-2">
+
+              {/* Immagine Fossoli - Corretta senza bordi */}
+              <div className="relative h-[350px] md:order-2 overflow-hidden bg-transparent">
                 <Image 
                   src="/tulipanofossoli-card3.webp" 
                   alt="Il Tulipano Fossoli" 
                   fill 
-                  className="object-contain rounded-sm" // RIMOSSO shadow-lg
+                  className="object-cover" 
                 />
               </div>
             </div>
