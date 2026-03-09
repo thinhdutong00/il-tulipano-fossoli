@@ -1,4 +1,6 @@
-import type { Metadata } from "next";
+"use client"; // Necessario per gestire l'apertura del sottomenu
+
+import { useState } from "react";
 import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Link from "next/link"; 
@@ -9,16 +11,14 @@ const playfair = Playfair_Display({
   variable: "--font-playfair",
 });
 
-export const metadata: Metadata = {
-  title: "Il Tulipano Carpi | Ristorante Pizzeria",
-  description: "Cucina tradizionale emiliana e pizza gourmet a Carpi.",
-};
-
 export default function RootLayout({
   children, 
 }: Readonly<{
   children: React.ReactNode;
 }>) {
+  // Stato per gestire l'apertura della tendina
+  const [isMenuOpen, setIsMenuOpen] = useState(false);
+
   return (
     <html lang="it">
       <body className={`${playfair.className} antialiased tracking-tight bg-white text-[#333333]`}>
@@ -41,10 +41,38 @@ export default function RootLayout({
                 Informazioni
               </Link>
               
-              {/* --- AGGIUNTO QUI IL LINK MENU --- */}
-              <Link href="/menu" className="hover:text-[#E5B54F] transition">
-                Menù
-              </Link>
+              {/* --- SOTTOMENU CON TENDINA --- */}
+              <div 
+                className="relative"
+                onMouseEnter={() => setIsMenuOpen(true)}
+                onMouseLeave={() => setIsMenuOpen(false)}
+              >
+                <button className="hover:text-[#E5B54F] transition flex items-center gap-1 uppercase tracking-[0.2em]">
+                  Menù <span className="text-[8px]">{isMenuOpen ? '▲' : '▼'}</span>
+                </button>
+
+                {/* Tendina Sottomenu */}
+                {isMenuOpen && (
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-48">
+                    <div className="bg-white text-[#333333] shadow-2xl border-t-2 border-[#800020] py-2 rounded-sm overflow-hidden">
+                      <Link 
+                        href="/menu" 
+                        className="block px-6 py-3 hover:bg-gray-100 hover:text-[#800020] transition normal-case font-medium text-sm border-b border-gray-50"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Menù Completo
+                      </Link>
+                      <Link 
+                        href="/pizza-del-mese" 
+                        className="block px-6 py-3 hover:bg-gray-100 hover:text-[#800020] transition normal-case font-medium text-sm"
+                        onClick={() => setIsMenuOpen(false)}
+                      >
+                        Pizza del Mese
+                      </Link>
+                    </div>
+                  </div>
+                )}
+              </div>
 
               {/* Tasto Prenota */}
               <Link href="tel:0599110390">
