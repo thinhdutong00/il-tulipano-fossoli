@@ -17,28 +17,22 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
+  const [isContactsOpen, setIsContactsOpen] = useState(false); // Nuovo stato per il sottomenu contatti
 
   return (
     <html lang="it">
       <body className={`${playfair.className} antialiased tracking-tight bg-white text-[#333333]`}>
         
-        {/* --- HEADER FISSO --- */}
         <nav className="fixed top-0 w-full z-[100] bg-black/30 backdrop-blur-md border-b border-white/10 py-4">
           <div className="container mx-auto px-6 flex justify-between items-center text-white">
             
-            {/* Titolo/Logo */}
             <Link href="/" className="font-serif text-2xl uppercase tracking-tighter hover:opacity-80 transition">
               Il Tulipano
             </Link>
 
-            {/* Menu di Navigazione */}
             <div className="flex gap-8 items-center text-[11px] uppercase tracking-[0.2em] font-bold">
-              <Link href="/" className="hover:text-[#E5B54F] transition">
-                Home
-              </Link>
-              <Link href="/informazioni" className="hover:text-[#E5B54F] transition">
-                Informazioni
-              </Link>
+              <Link href="/" className="hover:text-[#E5B54F] transition">Home</Link>
+              <Link href="/informazioni" className="hover:text-[#E5B54F] transition">Informazioni</Link>
               
               {/* --- DROPDOWN MENU --- */}
               <div 
@@ -47,55 +41,48 @@ export default function RootLayout({
                 onMouseLeave={() => setIsMenuOpen(false)}
               >
                 <button className="hover:text-[#E5B54F] transition flex items-center gap-1 uppercase tracking-[0.2em] outline-none">
-                  Menù <span className="text-[8px] transition-transform duration-300" style={{ transform: isMenuOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
+                  Menù <span className="text-[8px]" style={{ transform: isMenuOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: '0.3s' }}>▼</span>
                 </button>
 
                 {isMenuOpen && (
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-52">
                     <div className="bg-white text-[#333333] shadow-2xl border-t-4 border-[#800020] py-2 rounded-sm overflow-hidden animate-in fade-in zoom-in-95 duration-200">
-                      <Link 
-                        href="/menu" 
-                        className="block px-6 py-3 hover:bg-gray-50 hover:text-[#800020] transition normal-case font-semibold text-[13px] border-b border-gray-100"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Menù Completo
-                      </Link>
-                      <Link 
-                        href="/pizza-del-mese" 
-                        className="block px-6 py-3 hover:bg-gray-50 hover:text-[#800020] transition normal-case font-semibold text-[13px] border-b border-gray-100"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Pizza del Mese
-                      </Link>
-                      <Link 
-                        href="/le-nostre-birre" 
-                        className="block px-6 py-3 hover:bg-gray-50 hover:text-[#800020] transition normal-case font-semibold text-[13px]"
-                        onClick={() => setIsMenuOpen(false)}
-                      >
-                        Le Nostre Birre
-                      </Link>
+                      <Link href="/menu" className="block px-6 py-3 hover:bg-gray-50 hover:text-[#800020] transition normal-case font-semibold text-[13px] border-b border-gray-100" onClick={() => setIsMenuOpen(false)}>Menù Completo</Link>
+                      <Link href="/pizza-del-mese" className="block px-6 py-3 hover:bg-gray-50 hover:text-[#800020] transition normal-case font-semibold text-[13px] border-b border-gray-100" onClick={() => setIsMenuOpen(false)}>Pizza del Mese</Link>
+                      <Link href="/le-nostre-birre" className="block px-6 py-3 hover:bg-gray-50 hover:text-[#800020] transition normal-case font-semibold text-[13px]" onClick={() => setIsMenuOpen(false)}>Le Nostre Birre</Link>
                     </div>
                   </div>
                 )}
               </div>
 
-              <Link href="/galleria" className="hover:text-[#E5B54F] transition">
-                Galleria
-              </Link>
+              <Link href="/galleria" className="hover:text-[#E5B54F] transition">Galleria</Link>
 
-              {/* --- VOCE CONTATTI AGGIUNTA QUI --- */}
-              <Link href="/contatti" className="hover:text-[#E5B54F] transition">
-                Contatti
-              </Link>
+              {/* --- DROPDOWN CONTATTI AGGIORNATO --- */}
+              <div 
+                className="relative"
+                onMouseEnter={() => setIsContactsOpen(true)}
+                onMouseLeave={() => setIsContactsOpen(false)}
+              >
+                <button className="hover:text-[#E5B54F] transition flex items-center gap-1 uppercase tracking-[0.2em] outline-none">
+                  Contatti <span className="text-[8px]" style={{ transform: isContactsOpen ? 'rotate(180deg)' : 'rotate(0deg)', transition: '0.3s' }}>▼</span>
+                </button>
 
-              {/* Tasto Prenota */}
+                {isContactsOpen && (
+                  <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-52">
+                    <div className="bg-white text-[#333333] shadow-2xl border-t-4 border-[#800020] py-2 rounded-sm overflow-hidden animate-in fade-in zoom-in-95 duration-200">
+                      <Link href="/contatti" className="block px-6 py-3 hover:bg-gray-50 hover:text-[#800020] transition normal-case font-semibold text-[13px] border-b border-gray-100" onClick={() => setIsContactsOpen(false)}>Recapiti e Mappa</Link>
+                      <Link href="/prenota-un-tavolo" className="block px-6 py-3 hover:bg-gray-50 hover:text-[#800020] transition normal-case font-semibold text-[13px]" onClick={() => setIsContactsOpen(false)}>Prenota un Tavolo</Link>
+                    </div>
+                  </div>
+                )}
+              </div>
+
               <Link href="tel:0599110390">
                 <button className="bg-[#800020] px-5 py-2 hover:bg-[#600018] transition shadow-lg text-white">
                   PRENOTA
                 </button>
               </Link>
             </div>
-
           </div>
         </nav>
         
