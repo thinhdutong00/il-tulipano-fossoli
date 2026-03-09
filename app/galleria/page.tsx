@@ -5,15 +5,15 @@ export default function GalleriaPage() {
   // Array di 20 immagini
   // Sostituisci i percorsi quando carichi le nuove foto in public/
   const galleriaImages = [
-    { src: "/tulipanocarpi-interno-1.webp", size: "md:col-span-2 md:row-span-2" },
-    { src: "/pizza-acciughe.webp", size: "" },
-    { src: "/piatto-di-pasta-gambero.webp", size: "" },
-    { src: "/filetto-di-carne-alla-griglia-tulipano.webp", size: "md:row-span-2" },
-    { src: "/scaffale-dei-vini-tulipano.webp", size: "md:col-span-2" },
-    { src: "/tulipanofossoli-card3.webp", size: "" },
-    { src: "/nuovo-menù-tulipano-carpi-_14_.jpg", size: "" },
+    { src: "/pizza-margherita-con-basilico-tulipano.webp", size: "md:col-span-2 md:row-span-2" },
+    { src: "/riso-cavolo-rosso-6.webp", size: "" },
+    { src: "/insalata-di-mare-10.webp", size: "" },
+    { src: "/tortellini-brodo.webp", size: "md:row-span-2" },
+    { src: "/tenerina-2.webp", size: "md:col-span-2" },
+    { src: "/tulipanocarpiinterno2.webp", size: "" },
+    { src: "/tulipanoprive100.webp", size: "" },
     // Da qui in poi usiamo placeholder o ripetizioni che sostituirai tu
-    { src: "/pizza-acciughe.webp", size: "md:col-span-1" }, 
+    { src: "/scaffalevini2.webp", size: "md:col-span-1" }, 
     { src: "/tulipanocarpi-interno-1.webp", size: "" },
     { src: "/piatto-di-pasta-gambero.webp", size: "md:col-span-2" },
     { src: "/filetto-di-carne-alla-griglia-tulipano.webp", size: "" },
