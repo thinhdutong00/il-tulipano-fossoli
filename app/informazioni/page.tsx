@@ -34,7 +34,7 @@ export default function InformazioniPage() {
               Il Tulipano, nato a Carpi nel 2010, è situato a due passi dal centro storico della città in via Aldo Moro Interna 1R, vicino allo stadio di Carpi. Da noi troverete un’atmosfera calda e accogliente, quasi famigliare. Ogni dettaglio del nostro ristorante è stato pensato per rendere ancora più piacevole la vostra esperienza e per farvi godere ogni attimo passato insieme a noi. La specialità del Tulipano è sicuramente la pizza ma non
             </p>
             <p>
-              mancano di certo le proposte a base di pesce e i piatti tradizionali emiliani. A pranzo inoltre potrete sperimentare il nostro menù del giorno, perfetto per chi ha una pausa pranzo breve ma che non vuole rinunciare al gusto del buon cibo.  Al Tulipano verrete accolti con un sorriso e professionalità e potrete scegliere se accomodarvi nella nostra sala principale o nel nostro dehor, riscaldato in inverno e fresco d’estate.
+              mancano di certo le proposte a base di pesce e i piatti tradizionali emiliani. A pranzo inoltre potrete sperimentare il nostro menù del giorno, perfetto per chi ha una pausa pranzo breve ma senza rinunciare al gusto di un buon pasto.  Al Tulipano verrete accolti con un sorriso e professionalità e potrete scegliere se accomodarvi nella nostra sala principale o nel nostro dehor, riscaldato in inverno e fresco d’estate.
             </p>
           </div>
         </div>
