@@ -179,27 +179,35 @@ export default function Home() {
         </div>
       </section>
 
-      {/* 5. SEZIONE SPAZI (Con Immagine dello staff) */}
-      <section className="py-20 container mx-auto px-4 flex flex-col md:flex-row items-center gap-12">
-        <div className="md:w-1/2">
-          <div className="relative h-96 w-full rounded-sm overflow-hidden shadow-2xl border-4 border-[#F9F6F2]">
-             <Image 
-                src="/staff2.png" 
-                alt="Ambiente Tulipano" 
-                fill 
-                className="object-cover"
-             />
+{/* 5. SEZIONE SPAZI (Organizzata esattamente come lo screenshot) */}
+      <section className="py-20 container mx-auto px-4">
+        {/* Parte Superiore: Titolo e Descrizione in due colonne */}
+        <div className="flex flex-col md:flex-row mb-12 items-start justify-between">
+          <div className="md:w-1/3">
+            <h2 className="text-5xl font-serif text-[#333333] leading-tight tracking-tighter">
+              I nostri<br />Spazi
+            </h2>
+          </div>
+          <div className="md:w-2/3 mt-6 md:mt-0 md:pl-12">
+            <p className="text-xl leading-relaxed text-gray-700 tracking-tight">
+              Al Tulipano sarete accolti con un caloroso sorriso e la massima professionalità. 
+              Potrete scegliere se rilassarvi nella nostra elegante sala principale o nel nostro 
+              accogliente dehor, riscaldato durante l&apos;inverno e piacevolmente fresco in estate, 
+              per un&apos;esperienza di comfort in ogni stagione.
+            </p>
           </div>
         </div>
-        <div className="md:w-1/2">
-          <h2 className="text-3xl font-serif mb-6 text-[#800020]">I nostri Spazi</h2>
-          <p className="text-gray-700 mb-6 text-lg">
-            Scegli se rilassarti nella nostra elegante sala principale o nel nostro accogliente dehor, 
-            riscaldato d&apos;inverno e piacevolmente fresco d&apos;estate.
-          </p>
-          <button className="bg-[#800020] text-white px-6 py-2 rounded-sm font-bold hover:bg-[#600018] transition uppercase">
-            Riserva un tavolo
-          </button>
+
+        {/* Parte Inferiore: Immagine Grande Orizzontale */}
+        <div className="relative h-[500px] w-full overflow-hidden shadow-lg group">
+          <Image 
+            src="/scaffale dei vini - tulipano.webp" 
+            alt="Interni Il Tulipano" 
+            fill 
+            className="object-cover transition-transform duration-700 group-hover:scale-105"
+          />
+          {/* Overlay leggero opzionale per eleganza */}
+          <div className="absolute inset-0 bg-black/5 opacity-0 group-hover:opacity-100 transition-opacity duration-500" />
         </div>
       </section>
 
