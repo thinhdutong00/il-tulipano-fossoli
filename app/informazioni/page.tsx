@@ -42,13 +42,13 @@ export default function InformazioniPage() {
         </div>
       </section>
 
-{/* 3. SEZIONE: LE NOSTRE SPECIALITÀ (ARANCIONE CON ONDE ORGANICHE) */}
+{/* 3. SEZIONE: LE NOSTRE SPECIALITÀ (ARANCIONE CON ONDE "PENNELLATE") */}
       <section className="relative bg-[#FFA500] text-white pt-32 pb-40 mt-[-1px] overflow-hidden">
         
-        {/* SVG Onda Superiore - Effetto Pennellata Fluida */}
+        {/* SVG Onda Superiore - Curva omogenea e fluida */}
         <div className="absolute top-0 left-0 w-full overflow-hidden leading-[0] z-20">
-          <svg className="relative block w-[calc(150%+1.3px)] h-[80px] md:h-[130px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V15.89c156.4,133.4,331.3-88.6,480.3,1.8s267,112.5,417.8,49.6S1100.2,5.1,1200,40V0Z" fill="#FFFFFF"></path>
+          <svg className="relative block w-[calc(160%+1.3px)] h-[80px] md:h-[150px]" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V30c150,100,350,100,500,0S850-70,1200,30V0Z" fill="#FFFFFF"></path>
           </svg>
         </div>
 
@@ -86,10 +86,10 @@ export default function InformazioniPage() {
           </div>
         </div>
 
-        {/* SVG Onda Inferiore - Morbida e Specchiata */}
+        {/* SVG Onda Inferiore - Specchiata e fluida */}
         <div className="absolute bottom-0 left-0 w-full overflow-hidden leading-[0]">
-          <svg className="relative block w-[calc(150%+1.3px)] h-[80px] md:h-[130px] rotate-180" viewBox="0 0 1200 120" preserveAspectRatio="none">
-            <path d="M0,0V15.89c156.4,133.4,331.3-88.6,480.3,1.8s267,112.5,417.8,49.6S1100.2,5.1,1200,40V0Z" fill="#FFFFFF"></path>
+          <svg className="relative block w-[calc(160%+1.3px)] h-[80px] md:h-[150px] rotate-180" viewBox="0 0 1200 120" preserveAspectRatio="none">
+            <path d="M0,0V30c150,100,350,100,500,0S850-70,1200,30V0Z" fill="#FFFFFF"></path>
           </svg>
         </div>
       </section>
