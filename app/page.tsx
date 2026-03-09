@@ -212,30 +212,39 @@ export default function Home() {
       </section>
 
 
-{/* 5.5 SEZIONE CTA PRENOTAZIONE */}
-      <section className="py-20 bg-[#F9F6F2] text-center px-4 border-t border-gray-100">
-        <div className="max-w-3xl mx-auto">
-          <h2 className="text-4xl md:text-5xl font-serif text-[#333333] mb-6 tracking-tighter">
+{/* 5.5 SEZIONE CTA PRENOTAZIONE CON PIZZA A DESTRA */}
+      <section className="relative py-20 bg-[#6D1919] text-center px-4 overflow-visible">
+        {/* Immagine Pizza Footer a destra - Sborda verso il basso */}
+        <div className="absolute right-0 bottom-[-100px] z-30 hidden lg:block w-[400px] h-[400px]">
+          <Image 
+            src="/pizzafooter.webp" 
+            alt="Pizza dettaglio" 
+            width={400}
+            height={400}
+            className="object-contain"
+          />
+        </div>
+
+        <div className="max-w-3xl mx-auto relative z-20">
+          <h2 className="text-4xl md:text-5xl font-serif text-white mb-6 tracking-tighter border-b-2 border-white inline-block pb-2">
             Riserva un tavolo
           </h2>
           
-          <p className="text-xl text-gray-700 mb-10 leading-relaxed tracking-tight">
+          <p className="text-xl text-white/90 mb-10 leading-relaxed tracking-tight">
             Prenota ora e siediti a tavola con le persone che più contano per te. 
             Vi aspetta un&apos;esperienza culinaria che siamo sicuri vi lascerà a bocca aperta!
           </p>
 
           <div className="flex flex-col items-center gap-4">
-            {/* Pulsante Principale */}
-            <button className="bg-[#800020] hover:bg-[#600018] text-white px-10 py-4 rounded-sm font-bold transition-all uppercase tracking-[0.2em] shadow-lg">
+            <button className="bg-[#E5B54F] hover:bg-[#D4A43D] text-white px-10 py-4 rounded-sm font-bold transition-all uppercase tracking-[0.2em] shadow-lg">
               Prenota un tavolo
             </button>
 
-            {/* Testo Secondario con Numero */}
             <div className="mt-4">
-              <p className="text-gray-500 italic">o Prenota il tuo spazio chiamando allo</p>
+              <p className="text-white/70 italic tracking-tight">o Prenota il tuo spazio chiamando allo</p>
               <a 
                 href="tel:0599110390" 
-                className="text-2xl font-bold text-[#333333] hover:text-[#800020] transition-colors"
+                className="text-3xl font-bold text-white hover:text-[#E5B54F] transition-colors"
               >
                 059 9110390
               </a>
