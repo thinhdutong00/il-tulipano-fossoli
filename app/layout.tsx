@@ -1,4 +1,4 @@
-"use client"; // Necessario per gestire lo stato dell'apertura del sottomenu
+"use client";
 
 import { useState } from "react";
 import { Playfair_Display } from "next/font/google";
@@ -16,7 +16,6 @@ export default function RootLayout({
 }: Readonly<{
   children: React.ReactNode;
 }>) {
-  // Stato per gestire l'apertura della tendina
   const [isMenuOpen, setIsMenuOpen] = useState(false);
 
   return (
@@ -41,7 +40,7 @@ export default function RootLayout({
                 Informazioni
               </Link>
               
-              {/* --- SOTTOMENU CON TENDINA --- */}
+              {/* --- DROPDOWN MENU --- */}
               <div 
                 className="relative"
                 onMouseEnter={() => setIsMenuOpen(true)}
@@ -51,7 +50,6 @@ export default function RootLayout({
                   Menù <span className="text-[8px] transition-transform duration-300" style={{ transform: isMenuOpen ? 'rotate(180deg)' : 'rotate(0deg)' }}>▼</span>
                 </button>
 
-                {/* Tendina Sottomenu */}
                 {isMenuOpen && (
                   <div className="absolute top-full left-1/2 -translate-x-1/2 pt-4 w-52">
                     <div className="bg-white text-[#333333] shadow-2xl border-t-4 border-[#800020] py-2 rounded-sm overflow-hidden animate-in fade-in zoom-in-95 duration-200">
@@ -60,7 +58,7 @@ export default function RootLayout({
                         className="block px-6 py-3 hover:bg-gray-50 hover:text-[#800020] transition normal-case font-semibold text-[13px] border-b border-gray-100"
                         onClick={() => setIsMenuOpen(false)}
                       >
-                        Il Nostro Menù
+                        Menù Completo
                       </Link>
                       <Link 
                         href="/pizza-del-mese" 
@@ -81,6 +79,11 @@ export default function RootLayout({
                 )}
               </div>
 
+              {/* --- VOCE GALLERIA AGGIUNTA COME PRINCIPALE --- */}
+              <Link href="/galleria" className="hover:text-[#E5B54F] transition">
+                Galleria
+              </Link>
+
               {/* Tasto Prenota */}
               <Link href="tel:0599110390">
                 <button className="bg-[#800020] px-5 py-2 hover:bg-[#600018] transition shadow-lg text-white">
@@ -91,7 +94,6 @@ export default function RootLayout({
 
           </div>
         </nav>
-        {/* --- FINE HEADER --- */}
         
         {children}
 
