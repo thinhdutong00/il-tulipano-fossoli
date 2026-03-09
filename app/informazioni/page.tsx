@@ -183,7 +183,7 @@ export default function InformazioniPage() {
               </div>
               <div className="relative h-[350px] rounded-sm overflow-hidden shadow-lg">
                 <Image 
-                  src="/tulipanocarpi-interno-1.webp" // Sostituisci con l'immagine corretta se disponibile
+                  src="/tulipanolimidi-insegna.webp" // Sostituisci con l'immagine corretta se disponibile
                   alt="Il Tulipano Vecchia Limidi"
                   fill
                   className="object-cover"
