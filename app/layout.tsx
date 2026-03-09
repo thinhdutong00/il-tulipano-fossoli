@@ -40,6 +40,12 @@ export default function RootLayout({
               <Link href="/informazioni" className="hover:text-[#E5B54F] transition">
                 Informazioni
               </Link>
+              
+              {/* --- AGGIUNTO QUI IL LINK MENU --- */}
+              <Link href="/menu" className="hover:text-[#E5B54F] transition">
+                Menù
+              </Link>
+
               {/* Tasto Prenota */}
               <Link href="tel:0599110390">
                 <button className="bg-[#800020] px-5 py-2 hover:bg-[#600018] transition shadow-lg">
@@ -52,17 +58,12 @@ export default function RootLayout({
         </nav>
         {/* --- FINE HEADER --- */}
         
-        {/* Contenuto delle pagine (Home, Informazioni, etc.) */}
         {children}
 
-        {/* --- FOOTER BI-COLORE (BIANCO + NERO) --- */}
+        {/* --- FOOTER --- */}
         <footer className="relative z-10 w-full m-0 p-0 border-none">
-          
-          {/* PARTE SUPERIORE: INFORMAZIONI (SFONDO BIANCO) */}
           <div className="bg-white py-16 text-[#333333]">
             <div className="container mx-auto px-4 grid md:grid-cols-3 gap-12">
-              
-              {/* Colonna: DOVE SIAMO */}
               <div className="flex flex-col space-y-4">
                 <h4 className="text-[#800020] font-serif text-xl tracking-widest uppercase border-b border-[#800020]/10 pb-2">
                   Dove Siamo
@@ -78,7 +79,6 @@ export default function RootLayout({
                 </Link>
               </div>
 
-              {/* Colonna: ORARI */}
               <div className="flex flex-col space-y-4">
                 <h4 className="text-[#800020] font-serif text-xl tracking-widest uppercase border-b border-[#800020]/10 pb-2">
                   Orari
@@ -94,7 +94,6 @@ export default function RootLayout({
                 <p className="text-[10px] italic text-gray-400 text-center uppercase tracking-widest">Aperto tutti i giorni</p>
               </div>
 
-              {/* Colonna: CONTATTI */}
               <div className="flex flex-col space-y-4">
                 <h4 className="text-[#800020] font-serif text-xl tracking-widest uppercase border-b border-[#800020]/10 pb-2">
                   Contatti
@@ -105,17 +104,14 @@ export default function RootLayout({
                    <Link href="#" className="w-10 h-10 rounded-full bg-[#800020] text-white flex items-center justify-center hover:bg-[#600018] transition-all cursor-pointer text-xs font-bold shadow-md">IG</Link>
                 </div>
               </div>
-
             </div>
           </div>
 
-          {/* PARTE INFERIORE: COPYRIGHT (SFONDO NERO) */}
           <div className="bg-black py-6 text-center">
             <p className="text-[10px] uppercase tracking-[0.4em] text-white/60">
-              © {new Date().getFullYear()} Il Tulipano — Excellence in Carpi — Developed with Next.js
+              © {new Date().getFullYear()} Il Tulipano — Excellence in Carpi
             </p>
           </div>
-
         </footer>
       </body>
     </html>
