@@ -84,7 +84,8 @@ export default function Home() {
         <div className="container mx-auto px-4 grid md:grid-cols-3 gap-8 text-center">
           <div>
             <h3 className="text-xl font-bold mb-2 uppercase tracking-widest text-[#800020]">Prenotazioni</h3>
-            <p className="text-lg">Chiama allo <span className="font-bold underline">059 9110390</span></p>
+            <p className="text-lg">Chiama allo <span className="font-bold underline">059 867 8400
+</span></p>
           </div>
           <div>
             <h3 className="text-xl font-bold mb-2 uppercase tracking-widest text-[#800020]">Orari Apertura</h3>
