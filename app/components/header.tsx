@@ -79,10 +79,10 @@ export default function Header() {
                 Menù <ChevronDown size={12} />
               </button>
               {activeDropdown === 'menu' && (
-                <div style={{ position: 'absolute', top: '100%', left: '50%', transform: 'translateX(-50%)', paddingTop: '15px', width: '200px' }}>
+                <div style={{ position: 'absolute', top: '100%', left: '50%', transform: 'translateX(-50%)', paddingTop: '15px', width: '220px' }}>
                   <div style={{ backgroundColor: '#fff', boxShadow: '0 10px 25px rgba(0,0,0,0.1)', borderTop: `4px solid ${mattone}`, padding: '10px 0', borderRadius: '4px' }}>
-                    <Link href="/menu" className="dropdown-link" style={dropdownLinkStyle}>Menù</Link>
-                    <Link href="/menu" className="dropdown-link" style={dropdownLinkStyle}>Menu-feste</Link>
+                    <Link href="/menu" className="dropdown-link" style={dropdownLinkStyle}>Menù Completo</Link>
+                    <Link href="/menu-feste" className="dropdown-link" style={{ ...dropdownLinkStyle, color: mattone, fontWeight: '800' }}>Menù Feste</Link>
                     <Link href="/pizza-del-mese" className="dropdown-link" style={dropdownLinkStyle}>Pizza del Mese</Link>
                   </div>
                 </div>
@@ -145,6 +145,7 @@ export default function Header() {
           <Link href="/" onClick={() => setIsMenuOpen(false)} style={mobileNavLinkStyle}>Home</Link>
           <Link href="/informazioni" onClick={() => setIsMenuOpen(false)} style={mobileNavLinkStyle}>Informazioni</Link>
           <Link href="/menu" onClick={() => setIsMenuOpen(false)} style={mobileNavLinkStyle}>Il Menù</Link>
+          <Link href="/menu-feste" onClick={() => setIsMenuOpen(false)} style={{ ...mobileNavLinkStyle, color: panna }}>Menù Feste</Link>
           <Link href="/galleria" onClick={() => setIsMenuOpen(false)} style={mobileNavLinkStyle}>Galleria</Link>
           <Link href="/contatti" onClick={() => setIsMenuOpen(false)} style={mobileNavLinkStyle}>Contatti</Link>
           
