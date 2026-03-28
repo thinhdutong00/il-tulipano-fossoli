@@ -107,21 +107,59 @@ export default function Footer() {
       </div>
 
       {/* COPYRIGHT SECTION NERA */}
-      <div style={{ backgroundColor: '#000000', padding: '24px 0', textAlign: 'center' }}>
+      <div style={{ backgroundColor: '#000000', padding: '30px 0', textAlign: 'center' }}>
         <p style={{ 
           fontSize: '10px', 
           textTransform: 'uppercase', 
-          letterSpacing: '0.4em', 
+          letterSpacing: '0.3em', 
           color: 'rgba(255, 255, 255, 0.6)',
-          margin: 0
+          margin: '0 0 15px 0', // Margine sotto per distanziarlo dai link
+          lineHeight: '1.8',
+          padding: '0 20px'
         }}>
           © {currentYear} Il Tulipano - ENJOY SRL Carpi (MO) via L. A. Muratori, 47, CAP 41012 P. IVA 03831040369 - REA MO - 421443 - Powered by Mago Digital
         </p>
+
+        {/* LINK LEGALI INTEGRATI */}
+        <div style={{ 
+          display: 'flex', 
+          gap: '20px', 
+          justifyContent: 'center',
+          borderTop: '1px solid rgba(255, 255, 255, 0.1)', // Sottile linea di separazione
+          paddingTop: '15px',
+          maxWidth: '400px',
+          margin: '0 auto'
+        }}>
+          <Link href="/privacy-policy" style={{ 
+            color: 'rgba(255, 255, 255, 0.4)', 
+            fontSize: '9px', 
+            textDecoration: 'none',
+            textTransform: 'uppercase',
+            letterSpacing: '0.1em',
+            transition: 'color 0.3s'
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.color = '#ffffff'}
+          onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255, 255, 255, 0.4)'}
+          >
+            Privacy Policy
+          </Link>
+          
+          <Link href="/cookie-policy" style={{ 
+            color: 'rgba(255, 255, 255, 0.4)', 
+            fontSize: '9px', 
+            textDecoration: 'none',
+            textTransform: 'uppercase',
+            letterSpacing: '0.1em',
+            transition: 'color 0.3s'
+          }}
+          onMouseEnter={(e) => e.currentTarget.style.color = '#ffffff'}
+          onMouseLeave={(e) => e.currentTarget.style.color = 'rgba(255, 255, 255, 0.4)'}
+          >
+            Cookie Policy
+          </Link>
+        </div>
       </div>
-      <div style={{ marginTop: '20px', display: 'flex', gap: '20px', justifyContent: 'center' }}>
-  <Link href="/privacy-policy" style={{ color: '#9ca3af', fontSize: '10px', textDecoration: 'none' }}>Privacy Policy</Link>
-  <Link href="/cookie-policy" style={{ color: '#9ca3af', fontSize: '10px', textDecoration: 'none' }}>Cookie Policy</Link>
-</div>
+      
     </footer>
   );
 }
