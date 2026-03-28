@@ -65,22 +65,23 @@ export default function Header() {
           {/* 1. LOGO (Sinistra) */}
           <div style={{ flex: '1', display: 'flex', justifyContent: 'flex-start' }}>
             <Link href="/">
-              <Image src="/logo.png" alt="Il Tulipano" width={180} height={80} priority style={{ objectFit: 'contain' }} />
+              <Image src="logo.png" alt="Il Tulipano" width={180} height={80} priority style={{ objectFit: 'contain' }} />
             </Link>
           </div>
 
           {/* 2. NAVBAR (Centro - Solo Desktop) */}
           <nav className="hidden lg:flex" style={{ flex: '2', justifyContent: 'center', gap: '30px' }}>
-            <Link href="/" style={navLinkStyle}>Home</Link>
-            <Link href="/informazioni" style={navLinkStyle}>Informazioni</Link>
+            <Link href="/" style={{ ...navLinkStyle, color: '#ffffff' }}>Home</Link>
+            <Link href="/informazioni" style={{ ...navLinkStyle, color: '#ffffff' }}>Informazioni</Link>
             
             <div className="relative group" onMouseEnter={() => setActiveDropdown('menu')} onMouseLeave={() => setActiveDropdown(null)}>
-              <button style={{ ...navLinkStyle, display: 'flex', alignItems: 'center', gap: '4px', background: 'none', border: 'none', cursor: 'pointer' }}>
+              <button style={{ ...navLinkStyle, color: '#ffffff', display: 'flex', alignItems: 'center', gap: '4px', background: 'none', border: 'none', cursor: 'pointer' }}>
                 Menù <ChevronDown size={12} />
               </button>
               {activeDropdown === 'menu' && (
                 <div style={{ position: 'absolute', top: '100%', left: '50%', transform: 'translateX(-50%)', paddingTop: '15px', width: '220px' }}>
                   <div style={{ backgroundColor: '#fff', boxShadow: '0 10px 25px rgba(0,0,0,0.1)', borderTop: `4px solid ${mattone}`, padding: '10px 0', borderRadius: '4px' }}>
+                    {/* I link qui sotto mantengono lo stile dropdownLinkStyle (testo scuro su fondo bianco) */}
                     <Link href="/menu" className="dropdown-link" style={dropdownLinkStyle}>Menù Completo</Link>
                     <Link href="/menu-feste" className="dropdown-link" style={dropdownLinkStyle}>Menù Feste</Link>
                     <Link href="/pizza-del-mese" className="dropdown-link" style={dropdownLinkStyle}>Pizza del Mese</Link>
