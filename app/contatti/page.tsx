@@ -15,7 +15,7 @@ export default function ContattiPage() {
           
           <div className="space-y-2">
             <p className="text-gray-600 text-lg md:text-xl font-light">
-              Si effettuano consegne a domicilio presso Carpi — 2,50 € / Fuori — 3,50 €
+              Si effettuano consegne a domicilio presso Fossoli — 2,50 € / Fuori — 3,50 €
             </p>
             <p className="text-gray-500 italic">
               Per ulteriori informazioni contattaci telefonicamente — a presto!
