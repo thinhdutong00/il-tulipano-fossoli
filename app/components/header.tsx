@@ -101,7 +101,7 @@ export default function Header() {
 
           {/* 3. AZIONI (Destra - Telefono e Prenota) */}
           <div className="hidden lg:flex" style={{ flex: '1', justifyContent: 'flex-end', alignItems: 'center', gap: '20px' }}>
-            <a href="tel:0599110390" style={{ 
+            <a href="tel:0598678400" style={{ 
               color: '#ffffff', // Icona e Numero ora sono bianchi
               display: 'flex', 
               alignItems: 'center', 
@@ -111,7 +111,7 @@ export default function Header() {
               fontWeight: '700' 
             }}>
               <Phone size={18} color="#ffffff" /> {/* Forza l'icona in bianco */}
-              <span>059 911 0390</span>
+              <span>059 867 8400</span>
             </a>
             
             <Link href="/prenota-un-tavolo" style={{ 

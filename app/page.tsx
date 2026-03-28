@@ -243,8 +243,8 @@ export default function Home() {
 
       <div className="mt-4">
         <p className="text-white/70 italic tracking-tight">o Prenota il tuo spazio chiamando allo</p>
-        <a href="tel:0599110390" className="text-3xl font-bold text-white hover:text-[#E5B54F] transition-colors">
-          059 9110390
+        <a href="tel:0598678400" className="text-3xl font-bold text-white hover:text-[#E5B54F] transition-colors">
+          059 8678400
         </a>
       </div>
     </div>

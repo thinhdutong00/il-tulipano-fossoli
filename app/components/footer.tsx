@@ -34,11 +34,11 @@ export default function Footer() {
               Dove Siamo
             </h4>
             <div style={{ display: 'flex', flexDirection: 'column', gap: '4px' }}>
-              <p style={{ fontSize: '18px', fontWeight: '700', margin: 0 }}>Via A. Moro Interna, 1R</p>
-              <p style={{ color: '#6b7280', margin: 0 }}>41012 Carpi (MO)</p>
+              <p style={{ fontSize: '18px', fontWeight: '700', margin: 0 }}>Via mare Adriatico, 30,</p>
+              <p style={{ color: '#6b7280', margin: 0 }}>41012 Fossoli (MO)</p>
             </div>
             <Link 
-              href="https://maps.app.goo.gl/TF4vnrge7dmfWR6m6" 
+              href="https://maps.app.goo.gl/CsKeUuSEM7EgAoeK9" 
               target="_blank" 
               style={{ 
                 color: mattone, 
