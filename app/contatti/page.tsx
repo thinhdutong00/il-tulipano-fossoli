@@ -41,11 +41,11 @@ export default function ContattiPage() {
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M20 10c0 6-8 12-8 12s-8-6-8-12a8 8 0 0 1 16 0Z"/><circle cx="12" cy="10" r="3"/></svg>
                 </div>
                 <Link 
-                  href="https://www.google.com/maps/dir//Via+Aldo+Moro+Interna+1R+41012+Carpi+MO" 
+                  href="https://maps.app.goo.gl/8g1PcswXgE7wTj1n7" 
                   target="_blank"
                   className="text-gray-700 hover:text-[#800020] transition-colors"
                 >
-                  <p className="text-lg">via aldo moro interna 1R - 41012 Carpi (MO) - <span className="font-bold border-b border-gray-400">Vai alle indicazioni stradali</span></p>
+                  <p className="text-lg">Via mare Adriatico, 30, 41012 Fossoli MO - <span className="font-bold border-b border-gray-400">Vai alle indicazioni stradali</span></p>
                 </Link>
               </div>
 
@@ -54,7 +54,8 @@ export default function ContattiPage() {
                 <div className="text-[#800020]">
                   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
                 </div>
-                <p className="text-lg text-gray-700">Numero di telefono - <span className="font-bold">059 9110390</span></p>
+                <p className="text-lg text-gray-700">Numero di telefono - <span className="font-bold">059 867 8400
+</span></p>
               </div>
 
               {/* WiFi */}
