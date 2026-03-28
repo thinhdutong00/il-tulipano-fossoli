@@ -101,13 +101,22 @@ export default function Header() {
 
           {/* 3. AZIONI (Destra - Telefono e Prenota) */}
           <div className="hidden lg:flex" style={{ flex: '1', justifyContent: 'flex-end', alignItems: 'center', gap: '20px' }}>
-            <a href="tel:0599110390" style={{ color: mattone, display: 'flex', alignItems: 'center', gap: '8px', textDecoration: 'none', fontSize: '14px', fontWeight: '700' }}>
-              <Phone size={18} />
+            <a href="tel:0599110390" style={{ 
+              color: '#ffffff', // Icona e Numero ora sono bianchi
+              display: 'flex', 
+              alignItems: 'center', 
+              gap: '8px', 
+              textDecoration: 'none', 
+              fontSize: '14px', 
+              fontWeight: '700' 
+            }}>
+              <Phone size={18} color="#ffffff" /> {/* Forza l'icona in bianco */}
               <span>059 911 0390</span>
             </a>
+            
             <Link href="/prenota-un-tavolo" style={{ 
               backgroundColor: mattone, 
-              color: panna, 
+              color: '#ffffff', // Testo interno al pulsante ora è bianco
               padding: '12px 24px', 
               borderRadius: '50px', 
               textDecoration: 'none', 
