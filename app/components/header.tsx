@@ -90,8 +90,13 @@ export default function Header() {
               )}
             </div>
 
-            <Link href="/galleria" style={navLinkStyle}>Galleria</Link>
-            <Link href="/contatti" style={navLinkStyle}>Contatti</Link>
+            <Link href="/galleria" style={{ ...navLinkStyle, color: '#ffffff' }}>
+              Galleria
+            </Link>
+
+            <Link href="/contatti" style={{ ...navLinkStyle, color: '#ffffff' }}>
+              Contatti
+            </Link>
           </nav>
 
           {/* 3. AZIONI (Destra - Telefono e Prenota) */}
