@@ -11,10 +11,7 @@ import "swiper/css/pagination";
 export default function MenuFestePage() {
   // Array con le immagini caricate nella cartella public
   const tempImages = [
-    "/1.png", "/2.png", "/3.png", "/4.png", "/5.png",
-    "/6.png", "/7.png", "/8.png", "/9.png", "/10.png",
-    "/11.png", "/12.png", "/13.png", "/14.png", "/15.png",
-    "/16.png", "/17.png", "/18.png", "/19.png", "/20.png"
+    "/pasqua-tra.jpg", "/pasqua-pesce.jpg"
   ];
 
   return (
