@@ -2,37 +2,19 @@
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Navigation, Pagination, Keyboard } from "swiper/modules";
 import Image from "next/image";
-import Link from "next/link";
 
 // Import stili Swiper necessari
 import "swiper/css";
 import "swiper/css/navigation";
 import "swiper/css/pagination";
 
-export default function MenufestePage() {
-  // Array temporaneo con le immagini che hai già nella cartella public
-  // Quando avrai le immagini del menu, sostituisci questi nomi
+export default function MenuFestePage() {
+  // Array con le immagini caricate nella cartella public
   const tempImages = [
-    "/1.png",
-    "/2.png",
-    "/3.png",
-    "/4.png",
-    "/5.png",
-    "/6.png",
-    "/7.png",
-    "/8.png",
-    "/9.png",
-    "/10.png",
-    "/11.png",
-    "/12.png",
-    "/13.png",
-    "/14.png",
-    "/15.png",
-    "/16.png",
-    "/17.png",
-    "/18.png",
-    "/19.png",
-    "/20.png"
+    "/1.png", "/2.png", "/3.png", "/4.png", "/5.png",
+    "/6.png", "/7.png", "/8.png", "/9.png", "/10.png",
+    "/11.png", "/12.png", "/13.png", "/14.png", "/15.png",
+    "/16.png", "/17.png", "/18.png", "/19.png", "/20.png"
   ];
 
   return (
@@ -41,8 +23,12 @@ export default function MenufestePage() {
         
         {/* Intestazione */}
         <div className="text-center mb-12">
-          <h1 className="text-5xl md:text-6xl font-serif italic text-[#333333] mb-4">Il Nostro Menù</h1>
-          <p className="text-gray-500 uppercase tracking-[0.3em] text-xs">Usa le frecce per sfogliare</p>
+          <h1 className="text-5xl md:text-6xl font-serif italic text-[#333333] mb-4">
+            Menù delle Feste
+          </h1>
+          <p className="text-gray-500 uppercase tracking-[0.3em] text-xs">
+            Sfoglia le nostre proposte speciali
+          </p>
           <div className="w-20 h-1 bg-[#800020] mx-auto mt-6"></div>
         </div>
 
@@ -51,14 +37,14 @@ export default function MenufestePage() {
           <Swiper
             modules={[Navigation, Pagination, Keyboard]}
             spaceBetween={10}
-            slidesPerView={1} // 1 pagina su mobile
+            slidesPerView={1} 
             navigation={true}
             keyboard={{ enabled: true }}
             pagination={{ clickable: true }}
             breakpoints={{
               768: {
-                slidesPerView: 2, // 2 pagine su desktop
-                spaceBetween: 0,  // Attaccate come un libro
+                slidesPerView: 2, 
+                spaceBetween: 0,  
               },
             }}
             className="menu-swiper rounded-lg shadow-2xl bg-white"
@@ -68,16 +54,17 @@ export default function MenufestePage() {
                 <div className="relative w-full aspect-[1/1.41] bg-white">
                   <Image
                     src={src}
-                    alt={`Pagina ${index + 1}`}
+                    alt={`Pagina Menù Feste ${index + 1}`}
                     fill
-                    className="object-cover md:object-contain" // Cover su mobile per riempire, Contain su desktop
+                    className="object-cover md:object-contain"
+                    priority={index < 2} // Carica subito le prime due pagine
                   />
                 </div>
               </SwiperSlide>
             ))}
           </Swiper>
 
-          {/* Stili per personalizzare le frecce e i pallini */}
+          {/* Stili personalizzati */}
           <style jsx global>{`
             .menu-swiper {
               padding-bottom: 60px !important;
@@ -89,6 +76,7 @@ export default function MenufestePage() {
               height: 50px !important;
               border-radius: 50%;
               box-shadow: 0 4px 15px rgba(0,0,0,0.15);
+              z-index: 50;
             }
             .swiper-button-next:after, .swiper-button-prev:after {
               font-size: 20px !important;
@@ -101,7 +89,10 @@ export default function MenufestePage() {
               .swiper-button-next, .swiper-button-prev {
                 width: 40px !important;
                 height: 40px !important;
+                top: 95% !important; /* Abbassa le frecce su mobile per non coprire il menù */
               }
+              .swiper-button-prev { left: 30% !important; }
+              .swiper-button-next { right: 30% !important; }
             }
           `}</style>
       
