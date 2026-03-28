@@ -145,16 +145,16 @@ export default function InformazioniPage() {
               </div>
             </div>
 
-{/* Locale 2: Fossoli */}
+{/* Locale 2: Carpi */}
             <div className="grid md:grid-cols-2 gap-12 items-center">
               <div className="space-y-6 md:order-1">
-                <h3 className="text-4xl font-bold text-[#333333]">Il Tulipano - Fossoli</h3>
+                <h3 className="text-4xl font-bold text-[#333333]">Il Tulipano - Carpi</h3>
                 <div className="space-y-3 text-gray-600">
-                  <p>📍 Via Mare Adriatico 30 - 41012 Carpi (MO)</p>
-                  <p>📞 059 867 8400</p>
+                  <p>📍 Via A. Moro Interna, 1R, 41012 Carpi MO</p>
+                  <p>📞 059 911 0390</p>
                   <p>📶 Accesso libero al Wifi</p>
                 </div>
-                <Link href="https://iltulipanofossoli.it" target="_blank">
+                <Link href="https://iltulipanocarpi.it" target="_blank">
                   <button className="bg-[#800020] text-white px-8 py-3 rounded font-medium transition-all hover:bg-[#600018]">
                     Vai al Sito Web ›
                   </button>
