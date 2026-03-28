@@ -82,7 +82,7 @@ export default function Header() {
                 <div style={{ position: 'absolute', top: '100%', left: '50%', transform: 'translateX(-50%)', paddingTop: '15px', width: '200px' }}>
                   <div style={{ backgroundColor: '#fff', boxShadow: '0 10px 25px rgba(0,0,0,0.1)', borderTop: `4px solid ${mattone}`, padding: '10px 0', borderRadius: '4px' }}>
                     <Link href="/menu" className="dropdown-link" style={dropdownLinkStyle}>Menù</Link>
-                    <Link href="/menu" className="dropdown-link" style={dropdownLinkStyle}>Menù-feste</Link>
+                    <Link href="/menu" className="dropdown-link" style={dropdownLinkStyle}>Menu-feste</Link>
                     <Link href="/pizza-del-mese" className="dropdown-link" style={dropdownLinkStyle}>Pizza del Mese</Link>
                   </div>
                 </div>
