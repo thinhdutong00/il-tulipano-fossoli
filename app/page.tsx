@@ -148,7 +148,7 @@ export default function Home() {
       </section>
 
 {/* 4. PREVIEW MENU */}
-      <section className="py-16 bg-[#6D1919] text-white">
+      <section className="py-16 bg-[#001a3d] text-white">
         <div className="container mx-auto px-4">
           <h2 className="text-3xl font-serif text-center mb-12 text-[#D4AF37]">I Nostri Piatti</h2>
           
@@ -163,11 +163,7 @@ export default function Home() {
             <MenuItem name="Risotto ai Frutti di Mare" price="18,00€" />
             <MenuItem name="Fritto Misto di Pesce" price="18,00€" />
 
-            {/* Nuove due righe (4 piatti) */}
-            <MenuItem name="Tagliata di Manzo al Rosmarino" price="22,00€" />
-            <MenuItem name="Tortelloni Burro e Oro" price="13,00€" />
-            <MenuItem name="Pizza Gourmet del Mese" price="12,50€" />
-            <MenuItem name="Grigliata Reale di Pesce" price="26,00€" />
+            
           </div>
 
           {/* Pulsante per il Menù Intero */}
@@ -213,7 +209,7 @@ export default function Home() {
 
 
 {/* 5.5 SEZIONE CTA PRENOTAZIONE */}
-<section className="relative py-20 bg-[#6D1919] text-center px-4 overflow-visible z-20">
+<section className="relative py-20 bg-[#001a3d] text-center px-4 overflow-visible z-20">
   
   {/* Immagine Pizza: 
       - bottom-[-140px]: la spinge molto più in basso sopra il footer
