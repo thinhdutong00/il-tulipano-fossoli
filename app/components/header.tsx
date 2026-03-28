@@ -44,7 +44,7 @@ export default function Header() {
           left: 0,
           right: 0,
           height: '90px',
-          backgroundColor: '#ffffff',
+          backgroundColor: '#001a3d',
           borderBottom: '1px solid rgba(0,0,0,0.05)',
           zIndex: 1000,
           transition: 'transform 0.4s ease-in-out',
