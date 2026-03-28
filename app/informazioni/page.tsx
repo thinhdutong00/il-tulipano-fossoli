@@ -41,7 +41,7 @@ export default function InformazioniPage() {
       </section>
 
 {/* 3. SEZIONE ARANCIONE: SPECIALITÀ, PRIVÈ E CATERING */}
-      <section className="relative bg-[#FFA500] text-white py-24">
+      <section className="relative bg-[#001a3d] text-white py-24">
         
         <div className="container mx-auto px-4 max-w-6xl relative z-10">
           <h2 className="text-5xl md:text-6xl font-serif italic text-center mb-20 tracking-tight">
