@@ -65,7 +65,7 @@ export default function Header() {
           {/* 1. LOGO (Sinistra) */}
           <div style={{ flex: '1', display: 'flex', justifyContent: 'flex-start' }}>
             <Link href="/">
-              <Image src="/logo.png" alt="Il Tulipano" width={140} height={50} priority style={{ objectFit: 'contain' }} />
+              <Image src="/logo.png" alt="Il Tulipano" width={180} height={80} priority style={{ objectFit: 'contain' }} />
             </Link>
           </div>
 
