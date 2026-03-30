@@ -149,32 +149,50 @@ export default function Home() {
       </section>
 
 {/* 4. PREVIEW MENU */}
-      <section className="py-16 bg-[#001a3d] text-white">
-        <div className="container mx-auto px-4">
-          <h2 className="text-3xl font-serif text-center mb-12 text-[#D4AF37]">I Nostri Piatti</h2>
-          
-          <div className="grid md:grid-cols-2 gap-x-16 gap-y-8 max-w-5xl mx-auto">
-            {/* Righe esistenti */}
-            <MenuItem name="Gnocco Fritto con Affettati Misti" price="14,00€" />
-            <MenuItem name="Tortelli Verdi Vecchia Modena" price="12,00€" />
-            <MenuItem name="Carbonara Romana" price="12,00€" />
-            <MenuItem name="Filetto di Fassona Piemontese" price="29,00€" />
-            <MenuItem name="Antipasto di Mare Tulipano" price="24,00€" />
-            <MenuItem name="Spaghettone allo Scoglio" price="19,00€" />
-            <MenuItem name="Risotto ai Frutti di Mare" price="18,00€" />
-            <MenuItem name="Fritto Misto di Pesce" price="18,00€" />
+<section className="relative py-24 overflow-hidden group">
+  {/* IMMAGINE DI SFONDO */}
+  <div className="absolute inset-0 z-0">
+    <Image
+      src="/interno-05.jpg"
+      alt="Interno Il Tulipano"
+      fill
+      className="object-cover transition-transform duration-1000 group-hover:scale-110"
+    />
+    {/* OVERLAY BLU SEMITRASPARENTE CON SFOCATURA */}
+    <div className="absolute inset-0 bg-[#001a3d]/85 backdrop-blur-sm" />
+  </div>
 
-            
-          </div>
+  <div className="container relative z-10 mx-auto px-4">
+    {/* INTESTAZIONE */}
+    <div className="text-center mb-16">
+      <span className="text-[#ffefcc]/60 uppercase tracking-[0.3em] text-[10px] font-bold block mb-2">
+        Dalla nostra cucina
+      </span>
+      <h2 className="text-4xl md:text-5xl font-serif italic text-[#ffefcc]">
+        I Nostri Piatti
+      </h2>
+      <div className="w-12 h-[1px] bg-[#642d3a] mx-auto mt-6"></div>
+    </div>
+    
+    <div className="grid md:grid-cols-2 gap-x-16 gap-y-10 max-w-5xl mx-auto">
+      <MenuItem name="Gnocco Fritto con Affettati Misti" price="14,00€" />
+      <MenuItem name="Tortelli Verdi Vecchia Modena" price="12,00€" />
+      <MenuItem name="Carbonara Romana" price="12,00€" />
+      <MenuItem name="Filetto di Fassona Piemontese" price="29,00€" />
+      <MenuItem name="Antipasto di Mare Tulipano" price="24,00€" />
+      <MenuItem name="Spaghettone allo Scoglio" price="19,00€" />
+      <MenuItem name="Risotto ai Frutti di Mare" price="18,00€" />
+      <MenuItem name="Fritto Misto di Pesce" price="18,00€" />
+    </div>
 
-          {/* Pulsante per il Menù Intero */}
-          <div className="text-center mt-16">
-            <button className="border-2 border-[#D4AF37] text-[#D4AF37] hover:bg-[#D4AF37] hover:text-black px-10 py-3 rounded-sm font-bold transition-all duration-300 uppercase tracking-[0.2em] text-sm">
-              Guarda tutto il menù
-            </button>
-          </div>
-        </div>
-      </section>
+    {/* Pulsante per il Menù Intero */}
+    <div className="text-center mt-20">
+      <button className="group relative inline-flex items-center justify-center px-12 py-4 font-bold text-[#ffefcc] transition-all duration-300 bg-[#642d3a] hover:bg-[#4a1f29] rounded-sm uppercase tracking-[0.2em] text-xs shadow-xl">
+        Guarda tutto il menù
+      </button>
+    </div>
+  </div>
+</section>
 
 {/* 5. SEZIONE SPAZI (Organizzata esattamente come lo screenshot) */}
       <section className="py-20 container mx-auto px-4">
