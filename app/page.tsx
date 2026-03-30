@@ -149,31 +149,32 @@ export default function Home() {
       </section>
 
 {/* 4. PREVIEW MENU */}
-<section className="relative py-24 overflow-hidden group">
-  {/* IMMAGINE DI SFONDO */}
+<section className="relative py-24 overflow-hidden">
+  {/* IMMAGINE DI SFONDO STATICA */}
   <div className="absolute inset-0 z-0">
     <Image
       src="/interno-05.jpg"
       alt="Interno Il Tulipano"
       fill
-      className="object-cover transition-transform duration-1000 group-hover:scale-110"
+      className="object-cover"
     />
     {/* OVERLAY BLU SEMITRASPARENTE CON SFOCATURA */}
     <div className="absolute inset-0 bg-[#001a3d]/85 backdrop-blur-sm" />
   </div>
 
   <div className="container relative z-10 mx-auto px-4">
-    {/* INTESTAZIONE */}
+    {/* INTESTAZIONE IN GIALLO */}
     <div className="text-center mb-16">
-      <span className="text-[#ffefcc]/60 uppercase tracking-[0.3em] text-[10px] font-bold block mb-2">
+      <span className="text-[#D4AF37]/80 uppercase tracking-[0.3em] text-[10px] font-bold block mb-2">
         Dalla nostra cucina
       </span>
-      <h2 className="text-4xl md:text-5xl font-serif italic text-[#ffefcc]">
+      <h2 className="text-4xl md:text-5xl font-serif italic text-[#D4AF37]">
         I Nostri Piatti
       </h2>
-      <div className="w-12 h-[1px] bg-[#642d3a] mx-auto mt-6"></div>
+      <div className="w-12 h-[1px] bg-[#D4AF37] mx-auto mt-6"></div>
     </div>
     
+    {/* GRIGLIA PIATTI - Assicurati che il componente MenuItem usi il testo giallo o bianco per leggibilità */}
     <div className="grid md:grid-cols-2 gap-x-16 gap-y-10 max-w-5xl mx-auto">
       <MenuItem name="Gnocco Fritto con Affettati Misti" price="14,00€" />
       <MenuItem name="Tortelli Verdi Vecchia Modena" price="12,00€" />
@@ -185,9 +186,9 @@ export default function Home() {
       <MenuItem name="Fritto Misto di Pesce" price="18,00€" />
     </div>
 
-    {/* Pulsante per il Menù Intero */}
+    {/* Pulsante per il Menù Intero in Giallo */}
     <div className="text-center mt-20">
-      <button className="group relative inline-flex items-center justify-center px-12 py-4 font-bold text-[#ffefcc] transition-all duration-300 bg-[#642d3a] hover:bg-[#4a1f29] rounded-sm uppercase tracking-[0.2em] text-xs shadow-xl">
+      <button className="relative inline-flex items-center justify-center px-12 py-4 font-bold text-[#D4AF37] border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#001a3d] transition-all duration-300 rounded-sm uppercase tracking-[0.2em] text-xs shadow-xl">
         Guarda tutto il menù
       </button>
     </div>
