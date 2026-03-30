@@ -5,12 +5,11 @@ import Image from 'next/image';
 export default function Home() {
   // Lista delle tue foto reali caricate su VS Code
   const slides = [
-    "/interno-05.jpg",
+    "/bottiglie-bancone-fossoli.jpeg",
     "/pizza-pomodoro-fossoli.jpeg",
     "/filetto-di-carne-alla-griglia-tulipano.webp",
     "/insalata-mare-fossoli.jpeg",
     "/tavolo-con-tovaglia-tulipano.webp",
-    "/bottiglie-bancone-fossoli.jpeg",
     "/muro-vino-fossoli.jpg"
    
   ];
