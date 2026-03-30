@@ -5,12 +5,13 @@ import Image from 'next/image';
 export default function Home() {
   // Lista delle tue foto reali caricate su VS Code
   const slides = [
-    "/hero1-tulipano-carpi.webp",
-    "/pizza-margherita-con-basilico-tulipano.webp",
+    "/interno-05.jpg",
+    "/pizza-pomodoro-fossoli.jpeg",
     "/filetto-di-carne-alla-griglia-tulipano.webp",
-    "/scaffale-dei-vini-tulipano.webp",
+    "/insalata-mare-fossoli.jpeg",
     "/tavolo-con-tovaglia-tulipano.webp",
-    "/lampade-soffitto-tulipano.webp"
+    "/bottiglie-bancone-fossoli.jpeg",
+    "/muro-vino-fossoli.jpg"
    
   ];
 
