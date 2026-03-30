@@ -21,7 +21,7 @@ export default function GalleriaPage() {
     { src: "/gnocco2.webp", size: "md:row-span-2" },
     { src: "/pomodoribasilico.webp", size: "" },
     { src: "/bruschetta3.webp", size: "" },
-    { src: "/vinoservito.webp", size: "md:col-span-2" },
+    { src: "/affettati.jpg", size: "md:col-span-2" },
     { src: "/tagliatalimone.webp", size: "" },
     { src: "/muro-vino-fossoli.jpg", size: "" },
     { src: "/tavolo-con-tovaglia-tulipano.webp", size: "" },
