@@ -8,10 +8,10 @@ export default function GalleriaPage() {
     { src: "/gramigna.jpeg", size: "col-span-1" },
     { src: "/insalata-di-mare-10.webp", size: "col-span-1" },
     { src: "/tortellini-brodo.webp", size: "row-span-2" },
-    { src: "/tenerina-2.webp", size: "col-span-2" },
+    { src: "/tortellini-porcini.jpeg", size: "col-span-2" },
     { src: "/bottiglie-bancone-fossoli.jpeg", size: "col-span-1" },
     { src: "/polpo-bruschette.jpg", size: "col-span-1" },
-    { src: "/scaffalevini2.webp", size: "col-span-1" }, 
+    { src: "/bicchiere-vino-fossoli.jpeg", size: "col-span-1" }, 
     { src: "/tiramisu.jpg", size: "col-span-1" },
     { src: "/scaffale-liquore.jpg", size: "col-span-2" },
     { src: "/pancettagrana.webp", size: "col-span-1" },
@@ -22,7 +22,7 @@ export default function GalleriaPage() {
     { src: "/affettati.jpg", size: "col-span-2" },
     { src: "/tagliatalimone.webp", size: "col-span-1" },
     { src: "/muro-vino-fossoli.jpg", size: "col-span-1" },
-    { src: "/tavolo-con-tovaglia-tulipano.webp", size: "col-span-1" },
+    { src: "/birrafossoli.jpeg", size: "col-span-1" },
     { src: "/pizza-acchiughe.webp", size: "col-span-1" },
   ];
 
