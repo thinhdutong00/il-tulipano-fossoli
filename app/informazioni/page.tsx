@@ -79,7 +79,7 @@ export default function InformazioniPage() {
           {/* BOX CTA MENÙ */}
           <div className="relative w-full max-w-4xl mx-auto h-[400px] rounded-sm overflow-hidden shadow-2xl group">
             <Image 
-              src="/filetto-di-carne-alla-griglia-tulipano.webp" 
+              src="/pasta01.jpeg" 
               alt="Guarda il menù"
               fill
               className="object-cover transition-transform duration-700 group-hover:scale-105"
