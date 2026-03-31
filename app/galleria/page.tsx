@@ -12,7 +12,7 @@ export default function GalleriaPage() {
     { src: "/tortellini-porcini.jpeg", size: "md:col-span-2 col-span-2" },
     { src: "/polpo-bruschette.jpg", size: "col-span-1" },
     { src: "/bicchiere-vino-fossoli.jpeg", size: "col-span-1" }, 
-    { src: "/tiramisu.jpg", size: "col-span-1" },
+    { src: "/tavolo-apparecchiato.jpg", size: "col-span-1" },
     { src: "/scaffale-liquore.jpg", size: "md:col-span-2 col-span-2" },
     { src: "/pancettagrana.webp", size: "col-span-1" },
     { src: "/melanzanapizza.webp", size: "col-span-1" },
