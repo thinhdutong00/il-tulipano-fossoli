@@ -128,7 +128,7 @@ export default function InformazioniPage() {
                     <div className="w-10 h-10 bg-[#3b5998] rounded flex items-center justify-center text-white">FB</div>
                     <div className="w-10 h-10 bg-[#e4405f] rounded flex items-center justify-center text-white">IG</div>
                   </div>
-                  <Link href="https://iltulipanovecchialimidi.it" target="_blank">
+                  <Link href="https://iltulipanolimidi.it" target="_blank">
                     <button className="bg-[#800020] hover:bg-[#600018] text-white px-8 py-3 rounded font-medium flex items-center gap-2 transition-colors">
                       Vai al Sito Web <span className="text-lg">›</span>
                     </button>
@@ -137,7 +137,7 @@ export default function InformazioniPage() {
               </div>
               <div className="relative h-[350px] rounded-sm overflow-hidden shadow-lg">
                 <Image 
-                  src="/tulipanolimidi-insegna.webp" // Sostituisci con l'immagine corretta se disponibile
+                  src="/limidi-interno.jpg" // Sostituisci con l'immagine corretta se disponibile
                   alt="Il Tulipano Vecchia Limidi"
                   fill
                   className="object-cover"
@@ -161,11 +161,11 @@ export default function InformazioniPage() {
                 </Link>
               </div>
 
-              {/* Immagine Fossoli - Corretta senza bordi */}
+              {/* Immagine carpi - Corretta senza bordi */}
               <div className="relative h-[350px] md:order-2 overflow-hidden bg-transparent">
                 <Image 
-                  src="/tulipanofossoli-card3.webp" 
-                  alt="Il Tulipano Fossoli" 
+                  src="/internocarpi02.jpg" 
+                  alt="Il Tulipano Carpi" 
                   fill 
                   className="object-cover" 
                 />
