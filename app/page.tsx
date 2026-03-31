@@ -30,7 +30,7 @@ export default function Home() {
       <section className="relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden">
         
         {/* Overlay scuro per leggere bene i testi */}
-        <div className="absolute inset-0 bg-black/40 z-10" />
+       
 
         {/* Immagini del Carosello */}
         <div className="absolute inset-0">
