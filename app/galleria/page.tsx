@@ -23,7 +23,7 @@ export default function GalleriaPage() {
     { src: "/tagliatalimone.webp", size: "col-span-1" },
     { src: "/muro-vino-fossoli.jpg", size: "col-span-1" },
     { src: "/birrafossoli.jpeg", size: "col-span-1" },
-    { src: "/gnoccofritto-salumi.jpg", size: "col-span-1" },
+    { src: "/amarodelcapo.jpg", size: "col-span-1" },
   ];
 
   return (
@@ -87,7 +87,7 @@ export default function GalleriaPage() {
         <div className="mt-24 text-center">
           <div className="inline-block p-8 md:p-12 border border-[#642d3a]/10 bg-white/40 backdrop-blur-sm rounded-lg">
             <p className="text-[#642d3a] font-serif italic text-xl md:text-2xl mb-8">
-              "La cucina è il cuore della casa, <br className="hidden md:block" /> il sapore è il cuore della vita."
+             
             </p>
             <a 
               href="tel:0599110390"
