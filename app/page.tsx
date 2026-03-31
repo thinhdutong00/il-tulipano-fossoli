@@ -30,7 +30,7 @@ export default function Home() {
       <section className="relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden">
         
         {/* Overlay scuro per leggere bene i testi */}
-       
+        <div className="absolute inset-0 bg-black/40 z-10" />
 
         {/* Immagini del Carosello */}
         <div className="absolute inset-0">
@@ -278,14 +278,16 @@ export default function Home() {
   );
 }
 
-// DEFINIZIONE DI MENUITEM (Mettila proprio alla fine di tutto, fuori da Home)
+// DEFINIZIONE DI MENUITEM (Versione senza effetto hover)
 function MenuItem({ name, price }: { name: string, price: string }) {
   return (
-    <div className="flex justify-between items-baseline border-b border-[#E5B54F]/20 pb-2 group hover:border-[#E5B54F] transition-colors duration-300">
-      <span className="text-md font-light uppercase tracking-[0.15em] group-hover:text-[#E5B54F] transition-colors">
+    // Rimosso 'group' e 'hover:border-[#E5B54F]'
+    <div className="flex justify-between items-baseline border-b border-[#D4AF37]/40 pb-2 transition-colors duration-300">
+      {/* Rimosso 'group-hover:text-[#E5B54F]' e aumentata opacità per leggibilità */}
+      <span className="text-md font-medium uppercase tracking-[0.15em] text-[#D4AF37]">
         {name}
       </span>
-      <span className="text-[#E5B54F] font-bold ml-4">{price}</span>
+      <span className="text-[#D4AF37] font-bold ml-4">{price}</span>
     </div>
   );
 }
