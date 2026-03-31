@@ -23,7 +23,7 @@ export default function GalleriaPage() {
     { src: "/tagliatalimone.webp", size: "col-span-1" },
     { src: "/muro-vino-fossoli.jpg", size: "col-span-1" },
     { src: "/birrafossoli.jpeg", size: "col-span-1" },
-    { src: "/pizza-acchiughe.webp", size: "col-span-1" },
+    { src: "/gnoccofritto-salumi.jpg", size: "col-span-1" },
   ];
 
   return (
