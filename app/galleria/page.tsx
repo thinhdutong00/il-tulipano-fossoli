@@ -5,7 +5,7 @@ export default function GalleriaPage() {
   // Array con le classi di dimensione per creare varietà visiva
   const galleriaImages = [
     { src: "/pizza-margherita-con-basilico-tulipano.webp", size: "col-span-2 row-span-2" },
-    { src: "/riso-cavolo-rosso-6.webp", size: "col-span-1" },
+    { src: "/gramigna.jpeg", size: "col-span-1" },
     { src: "/insalata-di-mare-10.webp", size: "col-span-1" },
     { src: "/tortellini-brodo.webp", size: "row-span-2" },
     { src: "/tenerina-2.webp", size: "col-span-2" },
