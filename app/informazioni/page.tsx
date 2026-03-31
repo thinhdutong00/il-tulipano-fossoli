@@ -10,7 +10,7 @@ export default function InformazioniPage() {
       <section className="relative h-[60vh] flex items-center justify-center overflow-hidden">
         <div className="absolute inset-0 bg-black/30 z-10" />
         <Image 
-          src="/interno-bicchieri.jpg" 
+          src="/interno-quadro.jpg" 
           alt="Sfondo Informazioni"
           fill
           className="object-cover"
