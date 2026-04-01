@@ -216,7 +216,7 @@ export default function Home() {
         {/* Parte Inferiore: Immagine Grande Orizzontale */}
         <div className="relative h-[500px] w-full overflow-hidden shadow-lg group">
           <Image 
-            src="/interno-05.jpg" 
+            src="/interno-04.jpg" 
             alt="Interni Il Tulipano" 
             fill 
             className="object-cover transition-transform duration-700 group-hover:scale-105"
