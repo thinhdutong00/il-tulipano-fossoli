@@ -1,6 +1,7 @@
 "use client"; // Necessario per far funzionare il timer del carosello
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 export default function Home() {
   // Lista delle tue foto reali caricate su VS Code
@@ -27,56 +28,65 @@ export default function Home() {
     <main className="min-h-screen bg-white text-[#333333]">
       
       {/* 1. HERO SECTION CON CAROSELLO */}
-      <section className="relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden">
-        
-        {/* Overlay scuro per leggere bene i testi */}
-        <div className="absolute inset-0 bg-black/40 z-10" />
+<section className="relative h-[85vh] flex items-center justify-center text-center text-white overflow-hidden">
+  
+  {/* Overlay scuro per leggere bene i testi */}
+  <div className="absolute inset-0 bg-black/40 z-10" />
 
-        {/* Immagini del Carosello */}
-        <div className="absolute inset-0">
-          {slides.map((image, index) => (
-            <div
-              key={index}
-              className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
-                index === currentSlide ? "opacity-100" : "opacity-0"
-              }`}
-            >
-              <Image 
-                src={image} 
-                alt={`Background ${index}`} 
-                fill 
-                className="object-cover scale-105" // Leggero zoom per effetto profondità
-                priority={index === 0}
-              />
-            </div>
-          ))}
-        </div>
-        
-        {/* Testi e Pulsanti (Invariati come richiesto) */}
-        <div className="relative z-20 px-4">
-          <h1 className="text-5xl md:text-7xl font-serif mb-4 drop-shadow-lg tracking-tight">
-            Benvenuti al Tulipano
-          </h1>
-          <div className="flex flex-col md:flex-row gap-4 justify-center mt-8">
-            <button className="bg-[#800020] hover:bg-[#600018] text-white px-8 py-3 rounded-sm font-bold transition uppercase tracking-widest shadow-lg">
-              Guarda il menù
-            </button>
-            <button className="bg-[#E5B54F] hover:bg-[#D4A43D] text-white px-8 py-3 rounded-sm font-bold transition uppercase tracking-widest shadow-lg">
-              Prenota un tavolo
-            </button>
-          </div>
-        </div>
+  {/* Immagini del Carosello */}
+  <div className="absolute inset-0">
+    {slides.map((image, index) => (
+      <div
+        key={index}
+        className={`absolute inset-0 transition-opacity duration-1000 ease-in-out ${
+          index === currentSlide ? "opacity-100" : "opacity-0"
+        }`}
+      >
+        <Image 
+          src={image} 
+          alt={`Background ${index}`} 
+          fill 
+          className="object-cover scale-105" // Leggero zoom per effetto profondità
+          priority={index === 0}
+        />
+      </div>
+    ))}
+  </div>
+  
+  {/* Testi e Pulsanti con i link corretti */}
+  <div className="relative z-20 px-4">
+    <h1 className="text-5xl md:text-7xl font-serif mb-4 drop-shadow-lg tracking-tight">
+      Benvenuti al Tulipano
+    </h1>
+    <div className="flex flex-col md:flex-row gap-4 justify-center mt-8">
+      
+      {/* Link al Menù */}
+      <Link href="https://www.iltulipanofossoli.it/menu">
+        <button className="bg-[#800020] hover:bg-[#600018] text-white px-8 py-3 rounded-sm font-bold transition uppercase tracking-widest shadow-lg w-full md:w-auto">
+          Guarda il menù
+        </button>
+      </Link>
 
-        {/* Indicatori del carosello (Pallini in basso) */}
-        <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
-          {slides.map((_, i) => (
-            <div 
-              key={i}
-              className={`h-1 transition-all duration-500 ${i === currentSlide ? "w-8 bg-white" : "w-2 bg-white/50"}`}
-            />
-          ))}
-        </div>
-      </section>
+      {/* Link alla Prenotazione */}
+      <Link href="https://www.iltulipanofossoli.it/prenota-un-tavolo">
+        <button className="bg-[#E5B54F] hover:bg-[#D4A43D] text-white px-8 py-3 rounded-sm font-bold transition uppercase tracking-widest shadow-lg w-full md:w-auto">
+          Prenota un tavolo
+        </button>
+      </Link>
+
+    </div>
+  </div>
+
+  {/* Indicatori del carosello (Pallini in basso) */}
+  <div className="absolute bottom-8 left-1/2 -translate-x-1/2 z-20 flex gap-2">
+    {slides.map((_, i) => (
+      <div 
+        key={i}
+        className={`h-1 transition-all duration-500 ${i === currentSlide ? "w-8 bg-white" : "w-2 bg-white/50"}`}
+      />
+    ))}
+  </div>
+</section>
 
       {/* 2. INFO RAPIDE (Colori armonizzati) */}
       <section className="py-12 bg-[#F9F6F2] border-b border-[#E5D3B3]">
