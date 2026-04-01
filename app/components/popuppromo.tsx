@@ -41,7 +41,7 @@ export default function PopupPromo() {
         {/* Immagine Promo */}
         <div className="relative aspect-[3/4] w-full overflow-hidden rounded-xl shadow-2xl border-2 border-[#ffefcc]">
           <Image 
-            src="/5632025c-829e-489c-9a97-392b49ed6653.jpg" // Assicurati che il nome file sia corretto in public/
+            src="/popup.png" // Assicurati che il nome file sia corretto in public/
             alt="Nuovo Hamburger Tulipano"
             fill
             className="object-cover"
