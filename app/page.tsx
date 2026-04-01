@@ -196,11 +196,13 @@ export default function Home() {
     </div>
 
     {/* Pulsante per il Menù Intero in Giallo */}
-    <div className="text-center mt-20">
-      <button className="relative inline-flex items-center justify-center px-12 py-4 font-bold text-[#D4AF37] border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#001a3d] transition-all duration-300 rounded-sm uppercase tracking-[0.2em] text-xs shadow-xl">
-        Guarda tutto il menù
-      </button>
-    </div>
+<div className="text-center mt-20">
+  <Link href="https://www.iltulipanofossoli.it/menu" className="inline-block">
+    <button className="relative inline-flex items-center justify-center px-12 py-4 font-bold text-[#D4AF37] border-2 border-[#D4AF37] hover:bg-[#D4AF37] hover:text-[#001a3d] transition-all duration-300 rounded-sm uppercase tracking-[0.2em] text-xs shadow-xl">
+      Guarda tutto il menù
+    </button>
+  </Link>
+</div>
   </div>
 </section>
 
