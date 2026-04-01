@@ -240,10 +240,7 @@ export default function Home() {
 {/* 5.5 SEZIONE CTA PRENOTAZIONE */}
 <section className="relative py-20 bg-[#001a3d] text-center px-4 overflow-visible z-20">
   
-  {/* Immagine Pizza: 
-      - bottom-[-140px]: la spinge molto più in basso sopra il footer
-      - right-[-30px]: la sposta leggermente verso l'esterno per un look più dinamico
-  */}
+  {/* Immagine Pizza */}
   <div className="absolute right-[-30px] bottom-[-140px] z-50 hidden lg:block w-[320px]">
     <Image 
       src="/pizzafooter.webp" 
@@ -266,9 +263,12 @@ export default function Home() {
     </p>
 
     <div className="flex flex-col items-center gap-4">
-      <button className="bg-[#E5B54F] hover:bg-[#D4A43D] text-white px-10 py-4 rounded-sm font-bold transition-all uppercase tracking-[0.2em] shadow-lg">
-        Prenota un tavolo
-      </button>
+      {/* AGGIUNTO LINK AL PULSANTE */}
+      <Link href="https://www.iltulipanofossoli.it/prenota-un-tavolo" className="w-full md:w-auto">
+        <button className="w-full md:w-auto bg-[#E5B54F] hover:bg-[#D4A43D] text-white px-10 py-4 rounded-sm font-bold transition-all uppercase tracking-[0.2em] shadow-lg">
+          Prenota un tavolo
+        </button>
+      </Link>
 
       <div className="mt-4">
         <p className="text-white/70 italic tracking-tight">o Prenota il tuo spazio chiamando allo</p>
