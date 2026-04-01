@@ -20,7 +20,7 @@ export default function GalleriaPage() {
     { src: "/pomodoribasilico.webp", size: "col-span-1" },
     { src: "/bruschetta3.webp", size: "col-span-1" },
     { src: "/gnoccofritto-salumi.jpg", size: "md:col-span-2 col-span-2" },
-    { src: "/tagliatalimone.webp", size: "col-span-1" },
+    { src: "/mascarpone.jpg", size: "col-span-1" },
     { src: "/muro-vino-fossoli.jpg", size: "col-span-1" },
     { src: "/birrafossoli.jpeg", size: "col-span-1" },
     { src: "/amarodelcapo.jpg", size: "col-span-1" },
