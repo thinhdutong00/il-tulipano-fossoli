@@ -4,6 +4,7 @@ import { Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Header from "./components/header";
 import Footer from "./components/footer";
+import PopupPromo from './components/popuppromo';
 
 const playfair = Playfair_Display({
   subsets: ["latin"],
@@ -23,8 +24,10 @@ export default function RootLayout({
         {/* L'Header viene richiamato qui una volta sola per tutto il sito */}
         <Header />
         
-        {children}
 
+        
+        {children}
+<PopupPromo />
         {/* Footer richiamato qui sotto */}
         <Footer />
         
