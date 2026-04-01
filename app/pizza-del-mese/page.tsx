@@ -6,7 +6,7 @@ export default function PizzaDelMesePage() {
   return (
     <main className="min-h-screen bg-white">
       {/* 1. HERO SECTION - ANNUNCIO */}
-      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-[#800020]">
+      <section className="relative h-[60vh] flex items-center justify-center overflow-hidden bg-[#0b1f6e]">
         <div className="absolute inset-0 opacity-40">
           <Image 
             src="/scaffale-dei-vini-tulipano.webp" 
