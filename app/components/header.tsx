@@ -136,16 +136,19 @@ export default function Header() {
       </header>
 
       {/* MOBILE MENU OVERLAY */}
-      <div style={{
-        position: 'fixed',
-        inset: 0,
-        backgroundColor: mattone,
-        zIndex: 2000,
-        transform: isMenuOpen ? 'translateX(0)' : 'translateX(100%)',
-        transition: 'transform 0.5s cubic-bezier(0.77, 0, 0.175, 1)',
-        display: 'flex',
-        flexDirection: 'column'
-      }}>
+<div style={{
+  position: 'fixed',
+  inset: 0,
+  height: '100dvh',
+  backgroundColor: mattone,
+  zIndex: 2000,
+  transform: isMenuOpen ? 'translateX(0)' : 'translateX(100%)',
+  transition: 'transform 0.5s cubic-bezier(0.77, 0, 0.175, 1)',
+  display: 'flex',
+  flexDirection: 'column',
+  overflowY: 'auto',
+  WebkitOverflowScrolling: 'touch'
+}}>
         {/* Top bar mobile: Logo a sx e X a dx */}
         <div style={{ display: 'flex', justifyContent: 'space-between', alignItems: 'center', padding: '20px 5%', height: '90px' }}>
           <Image src="/logo.png" alt="Logo" width={120} height={45} style={{ filter: 'brightness(0) invert(1)' }} />
