@@ -130,7 +130,7 @@ export default function Header() {
 
           {/* HAMBURGER (Solo Mobile) */}
           <button className="lg:hidden" onClick={() => setIsMenuOpen(true)} style={{ background: 'none', border: 'none', cursor: 'pointer' }}>
-            <Menu size={32} color={mattone} />
+            <Menu size={32} color="#ffffff" />
           </button>
         </div>
       </header>
