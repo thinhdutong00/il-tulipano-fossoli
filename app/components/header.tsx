@@ -180,7 +180,7 @@ export default function Header() {
             }}>
               Prenota un tavolo
             </Link>
-            <a href="tel:0598678400" style={{ 
+            <a href="tel:+390598678400" style={{ 
               border: `1px solid ${panna}`, 
               color: panna, 
               textAlign: 'center', 
